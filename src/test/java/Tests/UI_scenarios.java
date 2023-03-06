@@ -51,14 +51,14 @@ public class UI_scenarios {
 		actions.moveToElement(canvas, -100, -130);
 		actions.clickAndHold().moveByOffset(200, 0).release().click().build().perform();
 
-	    driver.findElement(By.xpath("//input[@title='Draw a line']")).click();
-	    // draw a vertical line
+	        driver.findElement(By.xpath("//input[@title='Draw a line']")).click();
+	        // draw a vertical line
 		actions.moveToElement(canvas, 0, -30);
-        actions.clickAndHold().moveByOffset(0, -200).release().click().build().perform();
+                actions.clickAndHold().moveByOffset(0, -200).release().click().build().perform();
 
-        // draw a rectangle
+                // draw a rectangle
 		driver.findElement(By.xpath("//input[@title='Draw a rectangle']")).click();
-        actions.moveToElement(canvas, -100, 0);
+                actions.moveToElement(canvas, -100, 0);
 		actions.clickAndHold().moveByOffset(200, 200).release().click().build().perform();
 
 		// Erase the vertical line 
@@ -69,9 +69,9 @@ public class UI_scenarios {
 		 // drag to the end point of the line and release the mouse button
 		actions.moveByOffset((-3) - (-100), (-130) - (-130)).release().click().build().perform();	
 		 // move to the start point of the line and click
-	    actions.moveToElement(canvas, 3, -130).clickAndHold().build().perform();
+	        actions.moveToElement(canvas, 3, -130).clickAndHold().build().perform();
 		 // drag to the end point of the line and release the mouse button
-	    actions.moveByOffset(100 - (3), (-130) - (-130)).release().click().build().perform();
+	        Sactions.moveByOffset(100 - (3), (-130) - (-130)).release().click().build().perform();
 		
 	}
 	
